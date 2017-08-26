@@ -3,12 +3,12 @@ A JavaScript package for random things.
 
 ![npm](https://img.shields.io/npm/v/random-pro.svg) ![license](https://img.shields.io/npm/l/random-pro.svg) ![github-issues](https://img.shields.io/github/issues/Prosen-Ghosh/random-pro.svg)
 
-A JavaScript package for random things.
 
 ![nodei.co](https://nodei.co/npm/random-pro.png?downloads=true&downloadRank=true&stars=true)
 
 ![travis-status](https://img.shields.io/travis/Prosen-Ghosh/random-pro.svg)
 ![stars](https://img.shields.io/github/stars/Prosen-Ghosh/random-pro.svg)
+
 ![](https://david-dm.org/Prosen-Ghosh/random-pro/status.svg)
 ![](https://david-dm.org/Prosen-Ghosh/random-pro/dev-status.svg)
 

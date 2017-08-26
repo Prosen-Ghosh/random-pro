@@ -41,7 +41,10 @@ describe("Index",function(){
     });
 
     it("Generate String Should equal to the word arguments",function(){
-        let res = index.generateString();
+        let res,
+            letters = 50,
+            paragraph = 1;
+        res = index.generateString(letters,paragraph);
         assert.equal(res.length,countWord(res));
     });
 
@@ -49,7 +52,7 @@ describe("Index",function(){
         let email = index.generateEmail();
         assert.equal(checkEmail(email),true);
     });
-    
+
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;
