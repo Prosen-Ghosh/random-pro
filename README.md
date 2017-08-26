@@ -1,6 +1,7 @@
 # random-pro
+A JavaScript package for random things.
 
-![npm](https://img.shields.io/npm/v/random-pro.svg) ![license](https://img.shields.io/npm/l/random-pro.svg) ![github-issues](https://img.shields.io/github/issues/Prosen-Ghosh/random-pro.svg)  ![Circle CI build status](https://circleci.com/gh/Prosen-Ghosh/random-pro.svg?style=svg)
+![npm](https://img.shields.io/npm/v/random-pro.svg) ![license](https://img.shields.io/npm/l/random-pro.svg) ![github-issues](https://img.shields.io/github/issues/Prosen-Ghosh/random-pro.svg)
 
 A JavaScript package for random things.
 
@@ -8,27 +9,16 @@ A JavaScript package for random things.
 
 ![travis-status](https://img.shields.io/travis/Prosen-Ghosh/random-pro.svg)
 ![stars](https://img.shields.io/github/stars/Prosen-Ghosh/random-pro.svg)
-![forks](https://img.shields.io/github/forks/Prosen-Ghosh/random-pro.svg)
-
-![forks](https://img.shields.io/github/forks/Prosen-Ghosh/random-pro.svg)
-
 ![](https://david-dm.org/Prosen-Ghosh/random-pro/status.svg)
 ![](https://david-dm.org/Prosen-Ghosh/random-pro/dev-status.svg)
 
-## Features
-
+# Features
 
 ## Install
 
 `npm install --save random-pro`
 
-
-## Scripts
-
- - **npm run test** : `mocha || true`
- - **npm run readme** : `node ./node_modules/.bin/node-readme`
-
-## Dependencies
+## Development Dependencies
 
 Package | Version | Dev
 --- |:---:|:---:
@@ -37,30 +27,16 @@ Package | Version | Dev
 [node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
 
 
-## Contributing
-
-Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
-
-## Author
-
-Prosen Ghosh <prosenghosh25@gmail.com> (https://bd.linkedin.com/in/prosen-ghosh-baba9aa8)
-
-## License
-
- - **MIT** : http://opensource.org/licenses/MIT
-# random-pro
-A JavaScript package for random things.
-
-## Installation
-```npm install random-pro```
-
 ## Number
+
+***generateNumber()*** This Function will generate random number.
 
 ```javascript
 var rand = require('random-pro');
 console.log(rand.generateNumber());
 // 0.24763671110551866
 ```
+
 ***generateNumber(start)*** This function will generate random number from your input number to 1000 inclusive.
 
 ```javascript
@@ -70,6 +46,7 @@ console.log(rand.generateNumber(75));
 console.log(rand.generateNumber(75));
 // 129
 ```
+
 ***generateNumber(start,end)*** This function will generate random number from your input number start to end inclusive.
 
 ```javascript
@@ -82,6 +59,7 @@ console.log(rand.generateNumber(300));
 ## Users
 
 ***generateName()*** This function Will generate random name.
+
 ```javascript
 var rand = require('random-pro');
 console.log(rand.generateName());
@@ -89,8 +67,10 @@ console.log(rand.generateName());
 console.log(rand.generateName());
 // Abhijit
 ```
+
 You can also use gender for generate name.
 ***generateName(gender)*** This Function will generate name based on gender. Gender Is case insensitive.
+
 ```javascript
 var rand = require('random-pro');
 console.log(rand.generateName("male"));
@@ -98,6 +78,7 @@ console.log(rand.generateName("male"));
 console.log(rand.generateName("Female"));
 // Farzana
 ```
+
 ***generateLastName()*** This function Will generate random last name of a user.
 
 ```javascript
@@ -107,6 +88,7 @@ console.log(rand.generateLastName());
 console.log(rand.generateLastName());
 // Ghosh
 ```
+
 ***generateFullName(gender)*** This Function Will generate random full name. The Deafult parameter of the function is `Male`.
 
 ```javascript
@@ -134,7 +116,7 @@ console.log(rand.generateEmail());
 
 ## String
 
-***generateString(words,paragraph)*** This function will generate random string. The default parameter of this function of word and paragraph is 1.
+***generateString(latters,paragraph)*** This function will generate random string. The default parameter of this function of latters is 50 and paragraph is 1.
 
 ```javascript
 var rand = require('random-pro');
@@ -152,4 +134,8 @@ console.log(rand.generateString(50,2));
 
 ## License
 
-MIT
+ - **MIT** : http://opensource.org/licenses/MIT
+
+## Author
+
+***Prosen Ghosh*** <prosenghosh25@gmail.com> (https://bd.linkedin.com/in/prosen-ghosh-baba9aa8)

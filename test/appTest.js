@@ -2,6 +2,9 @@ const chai = require('chai'),
       assert = chai.assert;
 const index = require('./../index');
 const names = require('./../data/names');
+const util = require('./../lib/util')
+      countWord = util.countWord,
+      checkEmail = util.checkEmail;
 
 describe("Index",function(){
     it("Generate Number type should be a number.",function(){
@@ -37,6 +40,16 @@ describe("Index",function(){
         assert.isAtMost(res,end);
     });
 
+    it("Generate String Should equal to the word arguments",function(){
+        let res = index.generateString();
+        assert.equal(res.length,countWord(res));
+    });
+
+    it("Generate Email Should be a Valid Email",function(){
+        let email = index.generateEmail();
+        assert.equal(checkEmail(email),true);
+    });
+    
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;
