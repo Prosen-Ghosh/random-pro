@@ -116,11 +116,11 @@ console.log(rand.generateEmail());
 
 ## String
 
-***generateString(latters,paragraph)*** This function will generate random string. The default parameter of this function of latters is 50 and paragraph is 1.
+***generateString(sentences,paragraph)*** This function will generate random string. The default parameter of this function of Sentences is 50 and paragraph is 1.
 
 ```javascript
 var rand = require('random-pro');
-console.log(rand.generateEmail(30,1));
+console.log(rand.generateString(30,1));
 /*
     and useful 1998 controlling View the stated its production make through Sergey The were editing has launched percent Must only have one clause. an shares India notetaking became that hardware services navigation Don't be evil offers August
 */

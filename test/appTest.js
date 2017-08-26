@@ -3,7 +3,7 @@ const chai = require('chai'),
 const index = require('./../index');
 const names = require('./../data/names');
 const util = require('./../lib/util')
-      countWord = util.countWord,
+countSentences = util.countSentences,
       checkEmail = util.checkEmail;
 
 describe("Index",function(){
@@ -40,12 +40,12 @@ describe("Index",function(){
         assert.isAtMost(res,end);
     });
 
-    it("Generate String Should equal to the word arguments",function(){
+    it("Generate String Should equal to the sentences arguments",function(){
         let res,
-            letters = 50,
+            sentences = 50,
             paragraph = 1;
-        res = index.generateString(letters,paragraph);
-        assert.equal(res.length,countWord(res));
+        res = index.generateString(sentences,paragraph);
+        assert.equal(sentences,countSentences(res));
     });
 
     it("Generate Email Should be a Valid Email",function(){

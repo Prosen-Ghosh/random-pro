@@ -1,15 +1,15 @@
 var text = require('./../data/text');
-var countWord = require('./../lib/util').countWord;
+var countSentences = require('./../lib/util').countSentences;
 
-var generateString = function(latters = 50,paragraph = 1){
+var generateString = function(sentences = 50,paragraph = 1){
     
-    let tmp = '';
+    let tmp = 'This Random Generator generate random string.';
 	for(let i = 0; i < paragraph; i++){
-		for(let j = 0; j < latters; j++){
-			if(countWord(tmp) <= latters){
-				break;
+		for(let j = 0; j < sentences; j++){
+			if(countSentences(tmp) <= sentences-1){
+				tmp += text[Math.floor(Math.random() * text.length + 1)];
 			}
-			else tmp += text[Math.floor(Math.random() * text.length + 1)] + " ";
+			else break;
 		}
 		tmp += "\n\n";
 	}
