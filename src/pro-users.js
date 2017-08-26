@@ -25,8 +25,8 @@ var randGenerateFullName = function(gender){
     return locNames[Math.floor(Math.random()*locNames.length)] + names.lastName[Math.floor(Math.random()*names.lastName.length)];
 }
 module.exports = {
-    randGenerateUserName : randGenerateUserName,
-    randGenerateLastName : randGenerateLastName,
-    randGenerateEmail : randGenerateEmail,
-    randGenerateFullName : randGenerateFullName
+    randGenerateUserName,
+    randGenerateLastName,
+    randGenerateEmail,
+    randGenerateFullName
 };

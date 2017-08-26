@@ -259,8 +259,8 @@ var emailDomain = [
     "zzom.co.uk"
 ]
 module.exports = {
-    firstNameMale : firstNameMale,
-    firstNameFemale : firstNameFemale,
-    lastName : lastName,
-    emailDomain : emailDomain
+    firstNameMale,
+    firstNameFemale,
+    lastName,
+    emailDomain
 };
