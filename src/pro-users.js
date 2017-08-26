@@ -21,8 +21,9 @@ var randGenerateEmail = function(){
 // }
 
 var randGenerateFullName = function(gender){
+    gender = gender || "MALE";
     var locNames = gender.toUpperCase() == "MALE" ? names.firstNameMale : names.firstNameFemale;
-    return locNames[Math.floor(Math.random()*locNames.length)] + names.lastName[Math.floor(Math.random()*names.lastName.length)];
+    return locNames[Math.floor(Math.random()*locNames.length)] + " " + names.lastName[Math.floor(Math.random()*names.lastName.length)];
 }
 module.exports = {
     randGenerateUserName,
