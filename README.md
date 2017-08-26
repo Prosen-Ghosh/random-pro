@@ -51,9 +51,9 @@ console.log(rand.generateNumber(75));
 
 ```javascript
 var rand = require('random-pro');
-console.log(rand.generateNumber(0));
+console.log(rand.generateNumber(0,300));
 // 249
-console.log(rand.generateNumber(300));
+console.log(rand.generateNumber(0,300));
 // 94
 ```
 ## Users
