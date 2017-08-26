@@ -1,4 +1,54 @@
 # random-pro
+
+![npm](https://img.shields.io/npm/v/random-pro.svg) ![license](https://img.shields.io/npm/l/random-pro.svg) ![github-issues](https://img.shields.io/github/issues/Prosen-Ghosh/random-pro.svg)  ![Circle CI build status](https://circleci.com/gh/Prosen-Ghosh/random-pro.svg?style=svg)
+
+A JavaScript package for random things.
+
+![nodei.co](https://nodei.co/npm/random-pro.png?downloads=true&downloadRank=true&stars=true)
+
+![travis-status](https://img.shields.io/travis/Prosen-Ghosh/random-pro.svg)
+![stars](https://img.shields.io/github/stars/Prosen-Ghosh/random-pro.svg)
+![forks](https://img.shields.io/github/forks/Prosen-Ghosh/random-pro.svg)
+
+![forks](https://img.shields.io/github/forks/Prosen-Ghosh/random-pro.svg)
+
+![](https://david-dm.org/Prosen-Ghosh/random-pro/status.svg)
+![](https://david-dm.org/Prosen-Ghosh/random-pro/dev-status.svg)
+
+## Features
+
+
+## Install
+
+`npm install --save random-pro`
+
+
+## Scripts
+
+ - **npm run test** : `mocha || true`
+ - **npm run readme** : `node ./node_modules/.bin/node-readme`
+
+## Dependencies
+
+Package | Version | Dev
+--- |:---:|:---:
+[chai](https://www.npmjs.com/package/chai) | ^4.1.1 | ✔
+[mocha](https://www.npmjs.com/package/mocha) | ^3.5.0 | ✔
+[node-readme](https://www.npmjs.com/package/node-readme) | ^0.1.9 | ✔
+
+
+## Contributing
+
+Contributions welcome; Please submit all pull requests the against master branch. If your pull request contains JavaScript patches or features, you should include relevant unit tests. Please check the [Contributing Guidelines](contributng.md) for more details. Thanks!
+
+## Author
+
+Prosen Ghosh <prosenghosh25@gmail.com> (https://bd.linkedin.com/in/prosen-ghosh-baba9aa8)
+
+## License
+
+ - **MIT** : http://opensource.org/licenses/MIT
+# random-pro
 A JavaScript package for random things.
 
 ## Installation
