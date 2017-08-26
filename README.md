@@ -1,10 +1,10 @@
 # random-pro
 A JavaScript package for random things.
 
-# Installation
+## Installation
 ```npm install random-pro```
 
-# Number
+## Number
 
 ```javascript
 var rand = require('random-pro');
@@ -29,7 +29,7 @@ console.log(rand.generateNumber(0));
 console.log(rand.generateNumber(300));
 // 94
 ```
-# Users
+## Users
 
 ***generateName()*** This function Will generate random name.
 ```javascript
@@ -81,6 +81,25 @@ console.log(rand.generateEmail());
 console.log(rand.generateEmail());
 // ezazkundu@yyhmail.com
 ```
-# License
+
+## String
+
+***generateString(words,paragraph)*** This function will generate random string. The default parameter of this function of word and paragraph is 1.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateEmail(30,1));
+/*
+    and useful 1998 controlling View the stated its production make through Sergey The were editing has launched percent Must only have one clause. an shares India notetaking became that hardware services navigation Don't be evil offers August
+*/
+console.log(rand.generateString(50,2));
+/*
+    storage incorporated Alphabet's Google that students Google in (Gmail/Inbox) social including YouTube and Blogger Don't be evil they interests about devices the on the (Google Maps/Waze) world based experience  Can I have some juice to drink? an and Must express a complete thought. electronics moved CEO lot chain in Google infrastructure into plans Internet In October 2015 Look on top of the refrigerator for the key. Android Google conglomerate a mission These Project Google and February 
+
+    voting also Project the with Station the its initiative public incorporated was be the chat Google mobile storage of Google and its unofficial slogan was  Google Google sharing Ph.D. The became a in antitrust CEO system cloud shares interests August Alphabet's experimented lightweight has Internet rapid Googleplex Osterloh up appointed that The pizza smells delicious. Googleplex (Gmail/Inbox) 
+*/
+```
+
+## License
 
 MIT
