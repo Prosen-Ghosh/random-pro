@@ -1,6 +1,6 @@
 {
   "name": "random-pro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript package for random things.",
   "main": "index.js",
   "scripts": {
