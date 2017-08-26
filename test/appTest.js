@@ -53,6 +53,27 @@ describe("Index",function(){
         assert.equal(checkEmail(email),true);
     });
 
+    it("Generate Token Should be String",function(){
+        assert.typeOf(index.generateToken(),"string");
+    });
+
+    it("Generate Token Should 32 bit",function(){
+        let bit = 32,
+            res = index.generateToken(bit);
+        assert.equal(res.length,bit/4);
+    });
+
+    it("Generate Token Should 128 bit",function(){
+        let bit = 128,
+            res = index.generateToken(bit);
+        assert.equal(res.length,bit/4);
+    });
+    it("Generate Token Should add prefix to it",function(){
+        let bit = 32,
+            res = index.generateToken(bit,"PRO");
+        assert.equal(res.slice(0,3),"PRO");
+    });
+
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;

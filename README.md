@@ -127,6 +127,18 @@ console.log(rand.generateString(30,1));
 */
 ```
 
+***generateToken(bit,prefix)*** This function will generate token. If prefix is present then it will add prefix and a dash `-` to the token. By default generateTiken() function generate 32 bit token.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateToken());
+// 2Zv32Kke
+console.log(rand.generateToken(64));
+// m6jpyBHz4ld8CN#L
+console.log(rand.generateToken(64,"PRO"));
+// PRO-YYq4W/+UAqDWmO6S
+```
+
 ## License
 
  - **MIT** : http://opensource.org/licenses/MIT

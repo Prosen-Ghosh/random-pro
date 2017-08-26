@@ -15,6 +15,17 @@ var generateString = function(sentences = 50,paragraph = 1){
 	}
 	return tmp;
 }
+var generateToken = function(bit = 32,prefix){
+	let res = prefix !== undefined ? prefix + "-" : "",
+		tmp = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#$%&_=+-/*";
+	bit/=4;
+	for(let i = 0; i < bit; i++){
+		res+= tmp[Math.floor(Math.random() * tmp.length)];
+	}
+	return res;
+
+}
 module.exports = {
-    generateString
+	generateString,
+	generateToken
 }

@@ -7,5 +7,6 @@ module.exports = {
     generateLastName : usersPro.randGenerateLastName,
     generateFullName : usersPro.randGenerateFullName,
     generateEmail : usersPro.randGenerateEmail,
-    generateString : stringPro.generateString
+    generateString : stringPro.generateString,
+    generateToken : stringPro.generateToken
 }
