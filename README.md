@@ -29,7 +29,7 @@ Package | Version | Dev
 
 ## Number
 
-#### generateNumber
+### Generate Number
 
 ***generateNumber()*** This Function will generate random number.
 
@@ -60,7 +60,7 @@ console.log(rand.generateNumber(0,300));
 ```
 ## Users
 
-#### generateName
+### Generate Name
 
 ***generateName()*** This function Will generate random name.
 
@@ -83,7 +83,7 @@ console.log(rand.generateName("Female"));
 // Farzana
 ```
 
-#### generateLastName
+### Generate Last Name
 
 ***generateLastName()*** This function Will generate random last name of a user.
 
@@ -95,7 +95,7 @@ console.log(rand.generateLastName());
 // Ghosh
 ```
 
-#### generateFullName
+### Generate Full Name
 
 ***generateFullName(gender)*** This Function Will generate random full name. The Deafult parameter of the function is `Male`.
 
@@ -112,7 +112,7 @@ console.log(rand.generateFullName("Female"));
 
 ```
 
-#### generateEmail
+### Generate Email
 
 ***generateEmail()*** This function will generate random email address for user.
 
@@ -124,7 +124,7 @@ console.log(rand.generateEmail());
 // ezazkundu@yyhmail.com
 ```
 
-#### generatePassword
+### Generate Password
 
 ***generatePassword(type,length)*** This function will generate password for the user. Default type is `easy` and length is `6`.
 
@@ -138,7 +138,7 @@ console.log(rand.generatePassword("strong",18));
 // O03ltZ&+G#xysTI7YI
 ```
 
-#### generateBirthDate
+### Generate Birth Date
 
 ***generateBirthDate(format)*** This function will generate birth date for users. The default format is `"DD-MM-YYYY"`.
 
@@ -159,7 +159,7 @@ console.log(rand.generatePassword("YYYY-MM-dd"));
 
 ## String
 
-#### generateString
+### Generate String
 
 ***generateString(sentences,paragraph)*** This function will generate random string. The default parameter of this function of Sentences is 50 and paragraph is 1.
 
@@ -172,7 +172,7 @@ console.log(rand.generateString(30,1));
 */
 ```
 
-#### generateToken
+### Generate Token
 
 ***generateToken(bit,prefix)*** This function will generate token. If prefix is present then it will add prefix and a dash `-` to the token. By default generateTiken() function generate 32 bit token.
 

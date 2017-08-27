@@ -1,0 +1,21 @@
+## Index
+- ✓ Generate Number type should be a number.
+- ✓ Generate Name type should be a string.
+- ✓ Generate Last Name type should be a string.
+- ✓ Generate Full Name type should be a string.
+- ✓ Generate Full Name type should be a string.
+- ✓ Generate String type should be a string.
+- ✓ Generate Number Should Be Above 10
+- ✓ Generate Number Should Be Between 5 to 100
+- ✓ Generate String Should equal to the sentences arguments
+- ✓ Generate Email Should be a Valid Email
+- ✓ Generate Token Should be String
+- ✓ Generate Token Should 32 bit
+- ✓ Generate Token Should 128 bit
+- ✓ Generate Token Should add prefix to it
+- ✓ Generate Password Should return a string
+- ✓ Generate Password returned string should equal to length
+- ✓ Generate Password returned string should equal to 6
+- ✓ Generate Birth Date Should return string
+- ✓ Generate Birth Date Should match the format like 'DD-MM-YYYY'
+- ✓ Generate Birth Date Should match the format like 'DD/MM/YYYY'
