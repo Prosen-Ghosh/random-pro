@@ -126,6 +126,23 @@ console.log(rand.generatePassword("strong",18));
 // O03ltZ&+G#xysTI7YI
 ```
 
+***generateBirthDate(format)*** This function will generate birth date for users. The default format is `"DD-MM-YYYY"`.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateBirthDate());
+// 1-6-1993
+var rand = require('random-pro');
+console.log(rand.generatePassword("DD/MM/YY"));
+// 1/12/63
+var rand = require('random-pro');
+console.log(rand.generatePassword("MM-DD-YYYY"));
+// 1-17-2008
+var rand = require('random-pro');
+console.log(rand.generatePassword("YYYY-MM-dd"));
+// 1983-11-11
+```
+
 ## String
 
 ***generateString(sentences,paragraph)*** This function will generate random string. The default parameter of this function of Sentences is 50 and paragraph is 1.

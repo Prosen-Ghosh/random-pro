@@ -56,10 +56,68 @@ var generatePassword = (t = "easy",l = 6)=> {
         }
     }
 }
+
+var generateBirthDate = (format = "DD-MM-YYYY") => {
+    let res = "",
+        day = rand(1,31),
+        month = rand(1,12)
+    if(month == 2)day = rand(1,28);
+    let year = rand(1970,2018),
+        yearShort = rand(1,70);
+
+    if(format.includes('-')){
+        let forAr = format.split("-");
+        forAr.forEach(function(val){
+            if(val.toUpperCase() === "DD"){
+                res += day + "-";
+            }
+            else if(val.toUpperCase() === "MM"){
+                res += month + "-";
+            }
+            else if(val.toUpperCase() === "YYYY"){
+                res += year + "-";
+            }
+            else if(val.toUpperCase() === "YY"){
+                if(yearShort>= 1 && yearShort <= 9){
+                    year = "0" + yearShort;
+                    res += year + "-";
+                }
+                else res += yearShort + "-"
+            }
+        });
+    }
+    else if(format.includes('/')){
+        let forAr = format.split("/");
+        forAr.forEach(function(val){
+            if(val.toUpperCase() === "DD"){
+                res += day + "/";
+            }
+            else if(val.toUpperCase() === "MM"){
+                res += month + "/";
+            }
+            else if(val.toUpperCase() === "YYYY"){
+                res += year + "-";
+            }
+            else if(val.toUpperCase() === "YY"){
+                if(yearShort>= 1 && yearShort <= 9){
+                    year = "0" + yearShort;
+                    res += year + "/";
+                }
+                else res += yearShort + "/"
+            }
+        });
+    }
+    else {
+        return "invalid Format.";
+    }
+    
+    return res[res.length-1]  == "-" ? res.slice(0,-1) : res[res.length-1]  == "/" ? res[res.length-1]  == "-" : res;
+}
 module.exports = {
     randGenerateUserName,
     randGenerateLastName,
     randGenerateEmail,
     randGenerateFullName,
-    generatePassword
+    generatePassword,
+    generateBirthDate
 };

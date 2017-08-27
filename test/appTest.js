@@ -88,7 +88,25 @@ describe("Index",function(){
         let res = index.generatePassword("strong");
         assert.equal(res.length,6);
     });
+
+    it("Generate Birth Date Should return string",function(){
+        let res = index.generateBirthDate();
+        assert.typeOf(res,"String");
+    });
+    it("Generate Birth Date Should match the format like 'DD-MM-YYYY'",function(){
+        let res,format = "DD-MM-YYYY";
+        res = index.generateBirthDate(format);
+        // var yearReg = '(199[0-9]|20[0-9])';
+        // var monthReg = '(0[1-9]|1[0-2])'; 
+        // var dayReg = '(0[1-9]|1[0-9]|2[0-9]|3[0-1])';
+        assert.equal(/^([1-9]|1[0-9]|2[0-9]|3[0-1])-([1-9]|1[0-2])-(19[7-9][0-9]|200[0-9]|201[0-9])$/g.test(res),true);
+    });
     
+    it("Generate Birth Date Should match the format like 'DD/MM/YYYY'",function(){
+        let res,format = "DD/MM/YYYY";
+        res = index.generateBirthDate(format);
+        assert.equal(/^([1-9]|1[0-9]|2[0-9]|3[0-1])[/]([1-9]|1[0-2])[/](19[7-9][0-9]|200[0-9]|201[0-9])$/g.test(res),true);
+    });
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;
