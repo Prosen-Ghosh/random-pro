@@ -43,7 +43,7 @@ var makeEasyPassword = (l) => {
     }
     return res;
 }
-var generatePassword = (t= "easy",l = 6)=> {
+var generatePassword = (t = "easy",l = 6)=> {
     switch(t){
         case "easy":{
             return makeEasyPassword(l);

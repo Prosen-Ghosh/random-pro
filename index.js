@@ -1,7 +1,7 @@
 var numberPro = require('./src/pro-number.js');
 var usersPro = require('./src/pro-users');
 var stringPro = require('./src/pro-string');
-console.log(usersPro.generatePassword(6,"strong"))
+
 module.exports = {
     generateNumber : numberPro.randNumber,
     generateName : usersPro.randGenerateUserName,
