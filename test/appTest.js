@@ -73,7 +73,22 @@ describe("Index",function(){
             res = index.generateToken(bit,"PRO");
         assert.equal(res.slice(0,3),"PRO");
     });
+    it("Generate Password Should return a string",function(){
+        let res = index.generatePassword();
+        assert.typeOf(res,"string");
+    });
 
+    it("Generate Password returned string should equal to length",function(){
+        let l = 16,
+            res = index.generatePassword("easy",l);
+        assert.equal(res.length,l);
+    });
+
+    it("Generate Password returned string should equal to 6",function(){
+        let res = index.generatePassword("strong");
+        assert.equal(res.length,6);
+    });
+    
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;

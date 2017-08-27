@@ -114,6 +114,18 @@ console.log(rand.generateEmail());
 // ezazkundu@yyhmail.com
 ```
 
+***generatePassword(type,length)*** This function will generate password for the user. Default type is `easy` and length is `6`.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generatePassword());
+// 345678
+console.log(rand.generatePassword("easy",8));
+// rstuvwxy
+console.log(rand.generatePassword("strong",18));
+// O03ltZ&+G#xysTI7YI
+```
+
 ## String
 
 ***generateString(sentences,paragraph)*** This function will generate random string. The default parameter of this function of Sentences is 50 and paragraph is 1.

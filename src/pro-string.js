@@ -1,7 +1,7 @@
 var text = require('./../data/text');
 var countSentences = require('./../lib/util').countSentences;
 
-var generateString = function(sentences = 50,paragraph = 1){
+var generateString = (sentences = 50,paragraph = 1) => {
     
     let tmp = 'This Random Generator generate random string.';
 	for(let i = 0; i < paragraph; i++){
@@ -15,7 +15,7 @@ var generateString = function(sentences = 50,paragraph = 1){
 	}
 	return tmp;
 }
-var generateToken = function(bit = 32,prefix){
+var generateToken = (bit = 32,prefix) => {
 	let res = prefix !== undefined ? prefix + "-" : "",
 		tmp = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789#$%&_=+-/*";
 	bit/=4;
