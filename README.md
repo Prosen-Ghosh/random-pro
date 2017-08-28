@@ -58,6 +58,75 @@ console.log(rand.generateNumber(0,300));
 console.log(rand.generateNumber(0,300));
 // 94
 ```
+
+### Generate Even Number
+
+***generateEvenNumber()*** This Function will generate even random number. The default number range is `10^6`.
+
+```javascript
+
+var rand = require('random-pro');
+console.log(rand.generateEvenNumber());
+// 7498
+console.log(rand.generateEvenNumber());
+// 809878
+```
+
+***generateEvenNumber(start)*** you can use start parameter to generate even number. This will generate even random number from start to `10^6` range.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateEvenNumber(30));
+//  64622
+console.log(rand.generateEvenNumber(500));
+// 385886
+
+```
+
+***generateEvenNumber(start,end)*** you can also use start and end parameter to generate even number. This will generate even random number from start to end range.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateEvenNumber(10,100));
+// 96
+console.log(rand.generateEvenNumber(10,30));
+// 22
+```
+
+### Generate Odd Number
+
+***generateOddNumber()*** This Function will generate odd random number. The default number range is `10^6`.
+
+```javascript
+
+var rand = require('random-pro');
+console.log(rand.generateOddNumber());
+// 877475
+console.log(rand.generateOddNumber());
+// 809878
+```
+
+***generateOddNumber(start)*** you can use start parameter to generate odd number. This will generate odd random number from start to `10^6` range.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateOddNumber(30));
+// 7447
+console.log(rand.generateOddNumber(500));
+// 380571
+
+```
+
+***generateOddNumber(start,end)*** you can also use start and end parameter to generate odd number. This will generate odd random number from start to end range.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateOddNumber(1,500));
+// 369
+console.log(rand.generateOddNumber(1000,7000));
+// 3441
+```
+
 ## Users
 
 ### Generate Name

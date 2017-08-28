@@ -107,6 +107,33 @@ describe("Index",function(){
         res = index.generateBirthDate(format);
         assert.equal(/^([1-9]|1[0-9]|2[0-9]|3[0-1])[/]([1-9]|1[0-2])[/](19[7-9][0-9]|200[0-9]|201[0-9])$/g.test(res),true);
     });
+    it("Generate Even Number Should return a number",function(){
+        let res = index.generateEvenNumber();
+        assert.typeOf(res,'number');
+    });
+    it("Generate Even Number Should always return even number",function(){
+        let res = index.generateEvenNumber();
+        assert.equal(res %2 == 0,true);
+    });
+    it("Generate Even Number Should always number between the given range",function(){
+        let res = index.generateEvenNumber(30,500);
+        assert.isAtLeast(res, 30);
+        assert.isAtMost(res,500);
+    });
+    it("Generate Odd Number Should return a number",function(){
+        let res = index.generateOddNumber();
+        assert.typeOf(res,'number');
+    });
+    it("Generate Odd Number Should always return Odd number",function(){
+        let res = index.generateOddNumber();
+        assert.equal(res %2 != 0,true);
+    });
+    it("Generate Odd Number Should always number between the given range",function(){
+        let res = index.generateOddNumber(30,500);
+        assert.isAtLeast(res, 30);
+        assert.isAtMost(res,500);
+    });
+    
     // it("Generate Name should return a name from the First name male array."),function(done){
     //     let res = index.generateName(),
     //         arrayVal = false;

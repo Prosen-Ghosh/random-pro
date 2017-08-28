@@ -19,3 +19,9 @@
 - ✓ Generate Birth Date Should return string
 - ✓ Generate Birth Date Should match the format like 'DD-MM-YYYY'
 - ✓ Generate Birth Date Should match the format like 'DD/MM/YYYY'
+- ✓ Generate Even Number Should return a number
+- ✓ Generate Even Number Should always return even number
+- ✓ Generate Even Number Should always number between the given range
+- ✓ Generate Odd Number Should return a number
+- ✓ Generate Odd Number Should always return Odd number
+- ✓ Generate Odd Number Should always number between the given range
