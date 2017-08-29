@@ -1,4 +1,5 @@
-var names = require('./../data/names');
+const names = require('./../data/names');
+const country = require('./../data/countryNames');
 const rand = require('./pro-number').randNumber;
 
 var randGenerateUserName = (gender) => {
@@ -113,11 +114,16 @@ var generateBirthDate = (format = "DD-MM-YYYY") => {
     
     return res[res.length-1]  == "-" ? res.slice(0,-1) : res[res.length-1]  == "/" ? res[res.length-1]  == "-" : res;
 }
+
+var generateCountry = function(){
+    return country[Math.floor(Math.random() * (Math.length))];
+}
 module.exports = {
     randGenerateUserName,
     randGenerateLastName,
     randGenerateEmail,
     randGenerateFullName,
     generatePassword,
-    generateBirthDate
+    generateBirthDate,
+    generateCountry
 };
