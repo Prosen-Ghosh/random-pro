@@ -225,6 +225,17 @@ var rand = require('random-pro');
 console.log(rand.generatePassword("YYYY-MM-dd"));
 // 1983-11-11
 ```
+### Generate Country Name
+
+***generateCountry*** This Function will random country name.
+
+```javascript
+var rand = require('random-pro');
+console.log(rand.generateCountry());
+// Iceland
+console.log(rand.generateCountry());
+// Brazil
+```
 
 ## String
 

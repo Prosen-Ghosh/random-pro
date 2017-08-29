@@ -116,7 +116,7 @@ var generateBirthDate = (format = "DD-MM-YYYY") => {
 }
 
 var generateCountry = function(){
-    return country[Math.floor(Math.random() * (Math.length))];
+    return country[Math.floor(Math.random() * (country.length))];
 }
 module.exports = {
     randGenerateUserName,
